@@ -1,0 +1,14 @@
+{
+  "name": "commercial-insurance-form",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter backend run dev\" \"pnpm --filter frontend run dev\"",
+    "build": "pnpm -r --if-present run build",
+    "db:push": "pnpm --filter @workspace/db run push"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "typescript": "~5.9.2"
+  }
+}
