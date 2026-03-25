@@ -1,0 +1,13 @@
+run = "pnpm install && pnpm run dev"
+modules = ["nodejs-20:v8-20231227-322e88b"]
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 5173
+externalPort = 80
+
+[[ports]]
+localPort = 3001
+externalPort = 3001
